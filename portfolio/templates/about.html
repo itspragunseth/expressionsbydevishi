@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <style>
+
+                .image {
+                    width: 70%;
+                    height: auto;
+                    margin: auto;
+                    border-radius: 15px;
+                }
+            </style>
+            <div id="outer-flex" style="display: flex;">
+                <img class="image" src="/static/images/aboutme.jpg" alt="aboutme">
+            </div>
+        </div>
+        <div class="col">
+            <div class="container" style="padding-left: 0px;">
+                <center>
+                    <p style="font-family: 'Caveat', cursive; font-size: 42px;">
+                        I Am Devishi Seth
+                    </>
+                </center>
+                <p style="font-size: 28px; text-indent: 48px; font-family: 'Crimson Text', serif;">
+                        I, Devishi Seth am a Painting and Sculpture student at the School of the Art Institute of Chicago
+                    (SAIC) in Chicago, Illinois.
+                    I continue to explore the possibilities that lie in the world of art in the form of experimenting
+                    with different mediums or concepts in the world.
+                    I have always observed the world, this society from an outer perspective,
+                    questioning what part I could possible play in it.
+                    Then I realised that through art, the reflection of my feelings and experiences,
+                    I am able to put my thoughts into action and make my mark on the world.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    {% endblock %}

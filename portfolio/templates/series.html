@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="container">
+    <center><p style="font-family: 'Caveat', cursive; font-size: 128px;">
+        Series
+    </p></center>
+        <div class="row">
+        {% for obj in series_obj %}
+        <div class="card" style="width: fit-content; margin-bottom: 15px;">
+            <div class="card-body">
+                <div class="card-title">
+                    <center>
+                        <h3><b>{{obj.name}}</b></h3>
+                    </center>
+                    <p class="card-text">
+                        <center>
+                            {{obj.bio}}
+                        </center>
+                    </p>
+                    <p class="card-text">
+                        <center><a href="/series/{{obj.link}}" style="color: #228be6; font-size: 21px;">Go To Artworks</a></center>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div style="width: 15px;"></div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

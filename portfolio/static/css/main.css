@@ -1,0 +1,18 @@
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+}
+@font-face {
+    font-family: 'HKGrotesk';
+    src: local('HKGrotesk'),
+         url('../static/fonts/HKGrotesk-Regular.otf') format("opentype");
+  }
+  @font-face {
+    font-family: 'texgyreheros';
+    src: local('texgyreheros'),
+         url('../static/fonts/texgyreheros.otf') format("opentype");
+  }
